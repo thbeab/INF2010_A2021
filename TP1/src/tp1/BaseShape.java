@@ -55,7 +55,7 @@ public class BaseShape implements Cloneable {
 
     // TODO retourner les coordonnees de la liste.
     public Collection<Point2d> getCoords() {
-        return new ArrayList<>(this.coords); // ?
+        return new ArrayList<>(this.coords); // new ArrayList ?
     }
 
     // TODO retourner une nouvelle liste ou tous les points sont des copy
@@ -151,6 +151,6 @@ public class BaseShape implements Cloneable {
 
     // TODO retourner une nouvelle forme.
     public BaseShape clone() {
-        return new BaseShape(this.coords);
+        return new BaseShape(getCoordsDeepCopy());
     }
 }
