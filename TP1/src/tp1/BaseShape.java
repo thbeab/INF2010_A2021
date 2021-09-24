@@ -88,7 +88,7 @@ public class BaseShape implements Cloneable {
     public Double getMaxX() {
         Iterator<Point2d> it = coords.iterator();
         if(!it.hasNext())
-            return null;
+            return 0.0;
 
         Double maxX = it.next().X();
         while(it.hasNext()){
@@ -102,7 +102,7 @@ public class BaseShape implements Cloneable {
     public Double getMaxY() {
         Iterator<Point2d> it = coords.iterator();
         if(!it.hasNext())
-            return null;
+            return 0.0;
 
         Double maxY = it.next().Y();
         while(it.hasNext()){

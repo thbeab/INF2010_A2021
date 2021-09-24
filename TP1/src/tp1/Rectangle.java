@@ -7,8 +7,8 @@ public class Rectangle extends BaseShape {
     public Rectangle(Double width, Double height) {
         Double maxX = height/2;
         Double maxY = width/2;
-        for(Double x = -maxX; x<maxX; x++){
-            for(Double y = -maxY; y<maxX; y++){
+        for(Double x = -maxX; x<maxX; x+=1.0){
+            for(Double y = -maxY; y<maxX; y+=1.0){
                 this.add(new Point2d(x,y));
             }
         }
