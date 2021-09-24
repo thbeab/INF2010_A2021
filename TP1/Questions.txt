@@ -1,0 +1,22 @@
+1.Identifiez un patron de conception autre que Fluent Builder dans le tp.
+	b. Donnez un brève description du patron et comment it est utilisé dans le tp.
+
+Réponses:
+a) Le patron Prototype.
+b) Il crée de nouveaux objets à partir d’objets existants sans rendre le code dépendant de leur classe.
+Dans ce tp, on l'utilise pour créer des Shape à partir de points puis des Shapes complexe à partir de Baseshape. On crée donc 
+de nouveaux objets à partr de ceux existants.
+
+2. Donnez une explication du patron composite.
+	b. Comment le patron composite aurait pu être utilisé dans ce travail pratique? 
+
+2-a) Le patron composite est un  patron de conception structurel qui permet de traiter un groupe d'objets comme un objet unique.
+Pour ce faire, il les agence dans une structure arnborescente.Il est divisible en 4 parties que sont:
+*Composant: l'interface de base pour tous les objets dans la composition.
+*Feuille: il implémente le comportement par défaut du composant de base
+*Composite: il implémente les méthodes du composant de base.
+*Client: il a accès aux élements de la composition par l'utilisation de l'objet du composant de base.
+
+b-) Il aurait pu être utilisé au niveau de la création de formes. C'est à dire on aurait une interface commune aux formes (Shape).
+Ensuite une classe forme basique qui implémente Shape, une classe point qui extends la classe BaseShape et finalement une classe Forme composée(
+par exemple une lettre) qui extend BaseShape toujours et s'appuie aussi sur les autres classe.
