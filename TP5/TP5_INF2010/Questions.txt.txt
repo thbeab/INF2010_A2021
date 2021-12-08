@@ -1,0 +1,11 @@
+1. Le nombre maximal d'iterations pour cette boucle est le nombre de sommets
+contenus dans une liste d'adjacence. Le nombre minimal d'iterations est 0.
+
+2. Soit n le nombre de sommets. Si un sommet est adjacent a tous les sommets,
+et qu'a chaque iteration du while on trouve un chemin plus court vers ce
+sommet, le nombre de modifications du cout pour ce sommet sera de n-1.
+
+3. Le nombre d'iterations sera egal au nombre de sommets:
+a. 10 iterations
+b. 100 iterations
+c. 1000 iterations
